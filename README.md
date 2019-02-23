@@ -4,7 +4,8 @@ Scraping and processing Water System data from HTML pages of the SDWIS portal of
 
 ## Using Binder
 
-The easiest way to run these notebooks interactively is via Binder: **TODO add URL/button**.
+The easiest way to run these notebooks interactively is via Binder:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fndari/sdwis-scraping/master).
 
 NOTE: depending on the exact nature of the workflow, as well as other parameters (e.g. the amount of data to process/collect),
 Binder users might encounter technical as well as usage limitations.
@@ -15,7 +16,7 @@ Make sure to check Binder's [Guidelines for users](https://mybinder.readthedocs.
 First, clone the Git repository:
 
 ```sh
-git clone <this-url> && cd sdwis-scraping
+git clone <url-for-this-repo> && cd sdwis-scraping
 ```
 
 Then, install the dependencies using Conda. This will create and subsequently activate a virtual environment (virtualenv):
@@ -32,9 +33,18 @@ python -m ipykernel install --user --name $NAME
 
 # Getting the data
 
+## Input and intermediate results
+
 Both the input data (required in the first notebook) and intermediate results (to avoid having to re-run every notebook in sequence, which can be time- and resource-consuming, especially for fetching the HTML pages) are available as ZIP archives.
 
-To use them, download them from **TODO: add URL** and extract them to their respective appropriate location, i.e. as specified in `config.py`.
+The files are accessible from the [Releases section](https://github.com/fndari/sdwis-scraping/releases), under "Assets": 
+
+- [Input data](https://github.com/fndari/sdwis-scraping/releases/download/v0.1.0/input-data.zip)
+- [Intermediate results](https://github.com/fndari/sdwis-scraping/releases/download/v0.1.0/intermediate-results.zip)
+
+Download them and extract them to their respective appropriate location, i.e. as specified in `config.py`.
+
+## Results
 
 The resulting parsed data is released as a Datapackage, available at **TODO: add URL**.
 
