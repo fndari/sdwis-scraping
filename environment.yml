@@ -6,3 +6,5 @@ dependencies:
   - pip:
     - requests_html
     - requests_cache
+    # only needed to run tasks in tasks.py
+    - invoke

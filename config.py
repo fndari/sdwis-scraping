@@ -14,6 +14,8 @@ PATH_URLS = PATH_DATA / 'wsd-urls.csv'
 N_URLS_TO_PROCESS = 1000
 # without the ".sqlite" suffix
 PATH_REQUESTS_CACHE_DB = PATH_INPUT / 'requests-cache-db'
+PATH_DATAPACKAGE = PATH_DATA / 'datapackage.zip'
+PATH_DATAPACKAGE_METADATA = Path('./datapackage-metadata.yaml')
 
 # N_URLS_TO_PROCESS = -1
 # PATH_REQUESTS_CACHE_DB = Path('/data/datasets/parse-pws')
