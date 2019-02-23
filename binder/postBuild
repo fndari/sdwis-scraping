@@ -1,2 +1,5 @@
+#!/bin/bash
+python --version
+
 invoke -l
 invoke install-input-data
