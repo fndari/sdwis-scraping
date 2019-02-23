@@ -1,10 +1,11 @@
 dependencies:
   - python>=3.6
+  - ipykernel
   - pandas
   - ipywidgets
   - tqdm
+  - pyyaml
   - pip:
     - requests_html
-    - requests_cache
     # only needed to run tasks in tasks.py
     - invoke
