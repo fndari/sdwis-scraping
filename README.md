@@ -52,7 +52,7 @@ invoke install-input-data
 
 ## Results
 
-The resulting parsed data is released as a Datapackage, available at **TODO: add URL**.
+The resulting parsed data is released as a Datapackage. It is accessible at <https://github.com/waterdatacollaborative/sdwis-scraping-data>.
 
 # Licensing
 

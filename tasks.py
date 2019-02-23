@@ -33,3 +33,21 @@ def install_input_data(ctx, url=c._URL_INPUT_DATA_ARCHIVE, path=c.PATH_INPUT):
     ZipFile(path_archive).extractall(path)
     ctx.run(f'ls -l {path}')
     path_archive.unlink()
+
+
+def _format_datapackage(path):
+    import json
+
+    path = Path(path)
+
+    data = json.loads(path.read_text())
+    path.write_text(json.dumps(data, indent=4, separators=(', ', ': ')))
+
+@task
+def export_datapackage_to_repo(ctx, path_repo, datapackage_archive_path=c.PATH_DATAPACKAGE):
+    path_repo = Path(path_repo)
+    with ZipFile(datapackage_archive_path) as z:
+        z.extractall(path_repo)
+    
+    _format_datapackage(path_repo / 'datapackage.json')
+    
