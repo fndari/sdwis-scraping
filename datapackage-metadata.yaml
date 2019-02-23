@@ -1,0 +1,24 @@
+
+name: sdwis-wsd
+title: Data from the Water System Detail endpoint of the SDWIS portal of the California Water Boards
+description: The data was parsed (scraped) from the rendered HTML pages of the portal and converted to flat (CSV) tables after minimal processing.
+
+sources: 
+  - title: Water System Detail endpoint of the SDWIS portal of the CA Water Boards
+    path: https://sdwis.waterboards.ca.gov/PDWW/JSP/WaterSystemDetail.jsp
+  - title: Water System Search endpoint of the SDWIS portal of the CA Water Boards
+    path: https://sdwis.waterboards.ca.gov/PDWW/index.jsp
+  - title: Code and input data used to fetch, parse and process the data in the form of Jupyter notebooks (Python)
+    # TODO add actual URL
+    path: https://github.com/waterdatacollaborative
+contributors:
+  - title: Ludovico Bianchi
+    email: me@ludob.com
+    role: author
+    organization: Berkeley Water Data Collaborative
+  - title: Greg Gearhart
+    email: Greg.Gearhart@waterboards.ca.gov
+    role: maintainer
+    organization: California Water Boards
+
+version: 0.1.0
