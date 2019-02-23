@@ -37,8 +37,8 @@ python -m ipykernel install --user --name $NAME
 Both the input data (required in the first notebook) and intermediate results (to avoid having to re-run every notebook in sequence, which can be time- and resource-consuming, especially for fetching the HTML pages) are available as ZIP archives.
 
 The files are accessible from the [Releases section](https://github.com/fndari/sdwis-scraping/releases), under "Assets": 
-- [Input data](https://github.com/fndari/sdwis-scraping/releases/latest/input-data.zip)
-- [Intermediate results](https://github.com/fndari/sdwis-scraping/releases/latest/intermediate-results.zip)
+- [Input data](https://github.com/fndari/sdwis-scraping/releases/v0.1.0/input-data.zip)
+- [Intermediate results](https://github.com/fndari/sdwis-scraping/releases/v0.1.0/intermediate-results.zip)
 
 Download them and extract them to their respective appropriate location, i.e. as specified in `config.py`.
 
